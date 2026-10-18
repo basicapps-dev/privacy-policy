@@ -60,6 +60,36 @@
             font-weight: 600;
             margin-bottom: 1rem;
         }
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.9rem;
+        }
+        .nav-bar span {
+            color: var(--text-muted);
+        }
+        .nav-bar a {
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 0.3rem 0.75rem;
+            border-radius: 6px;
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+        .nav-bar a:hover {
+            color: var(--text-main);
+            border-color: var(--border);
+        }
+        .nav-bar a.active {
+            color: var(--text-main);
+            background: rgba(56, 189, 248, 0.15);
+            border-color: var(--accent);
+            font-weight: 600;
+        }
         .footer {
             margin-top: 2.5rem;
             padding-top: 1rem;
@@ -72,6 +102,12 @@
 </head>
 <body>
 <div class="container">
+    <nav class="nav-bar">
+        <span>BasicApps Policies:</span>
+        <a href="index.html" class="active">Nicotine Tracker</a>
+        <a href="floraly.html">Floraly</a>
+    </nav>
+
     <span class="badge">100% Offline &amp; Private</span>
     <h1>Privacy Policy for Nicotine Tracker</h1>
     <p><strong>Last Updated:</strong> August 23, 2026<br>

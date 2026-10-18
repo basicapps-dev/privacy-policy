@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Floraly (BasicApps Studio)</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #4ade80;
+            --border: #334155;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.9rem;
+        }
+        .nav-bar span {
+            color: var(--text-muted);
+        }
+        .nav-bar a {
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 0.3rem 0.75rem;
+            border-radius: 6px;
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+        .nav-bar a:hover {
+            color: var(--text-main);
+            border-color: var(--border);
+        }
+        .nav-bar a.active {
+            color: var(--text-main);
+            background: rgba(74, 222, 128, 0.15);
+            border-color: var(--accent);
+            font-weight: 600;
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 2rem;
+            margin-top: 0;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.75rem;
+        }
+        h2 {
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-top: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+        p, li {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+        strong {
+            color: var(--text-main);
+        }
+        code {
+            background: #0f172a;
+            color: var(--accent);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(74, 222, 128, 0.15);
+            color: var(--accent);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .footer {
+            margin-top: 2.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class="nav-bar">
+        <span>BasicApps Policies:</span>
+        <a href="index.html">Nicotine Tracker</a>
+        <a href="floraly.html" class="active">Floraly</a>
+    </nav>
+
+    <span class="badge">100% Offline &amp; Private</span>
+    <h1>Privacy Policy for Floraly</h1>
+    <p><strong>Last Updated:</strong> October 18, 2026<br>
+    <strong>Developer:</strong> BasicApps Studio<br>
+    <strong>Contact:</strong> basicapps.contact@gmail.com</p>
+
+    <h2>1. Core Privacy Philosophy</h2>
+    <p>BasicApps Studio develops <strong>Floraly</strong> as a 100% offline, privacy-first mobile plant care companion. We believe your plant collections, care schedules, habit notes, and photos belong exclusively to you. The application operates entirely without mandatory accounts, external trackers, or remote servers. Network access is utilized strictly by Google Play Billing for the optional Lifetime Pro purchase.</p>
+
+    <h2>2. Zero Data Collection</h2>
+    <p><strong>We collect, transmit, store, and share zero personal data, zero plant data, and zero device identifiers.</strong></p>
+    <ul>
+        <li><strong>No Account Registration:</strong> You do not need to create an account, provide an email address, or log in.</li>
+        <li><strong>No Analytics or Telemetry:</strong> We do not integrate tracking SDKs, crash reporters, or telemetry frameworks (no Firebase, Google Analytics, Sentry, or third-party trackers).</li>
+        <li><strong>No Advertising:</strong> The application contains zero advertisements and does not access the Google Advertising ID (GAID).</li>
+        <li><strong>No Device Tracking:</strong> We do not collect device IMEI, IP addresses, GPS coordinates, or persistent hardware identifiers.</li>
+    </ul>
+
+    <h2>3. On-Device Data Storage</h2>
+    <p>All information logged within the app (plant names, species details, watering frequencies, care history logs, and plant photos) is stored <strong>strictly locally on your device</strong> inside private application storage and a private SQLite/Room database.</p>
+    <ul>
+        <li><strong>Local Isolation:</strong> Your garden data never leaves your physical device.</li>
+        <li><strong>Photos:</strong> Photos captured for your plants are saved directly to app-private internal storage and are not transmitted or uploaded anywhere.</li>
+    </ul>
+
+    <h2>4. Permissions</h2>
+    <p>Floraly requests only minimal permissions necessary for local offline plant care:</p>
+    <ul>
+        <li><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code>: <strong>Managed by Google Play Billing.</strong> Used exclusively by Google Play Services for querying product pricing and completing in-app purchases. No personal data or plant logs are ever transmitted over the network.</li>
+        <li><code>POST_NOTIFICATIONS</code>: Requested on Android 13+ solely to display your scheduled plant watering and care reminders.</li>
+        <li><code>SCHEDULE_EXACT_ALARM</code>: Used strictly to ensure plant watering alarms fire accurately at your chosen time, even when the device enters deep battery saver or Doze mode.</li>
+        <li><code>RECEIVE_BOOT_COMPLETED</code>: Used to restore scheduled alarms automatically after your device reboots.</li>
+        <li><code>VIBRATE</code>: Used to vibrate the device during reminder notifications if enabled.</li>
+        <li><code>CAMERA</code> / <code>STORAGE</code>: <strong>Zero invasive runtime permissions.</strong> Floraly uses Android's native system camera intent via a private FileProvider for photo captures without requiring runtime storage or camera permissions. Light metering uses your device's ambient light hardware sensor locally.</li>
+    </ul>
+
+    <h2>5. Data Deletion &amp; Control</h2>
+    <p>Because all data is stored exclusively on your device, you maintain complete data sovereignty:</p>
+    <ul>
+        <li>Delete individual plants, photos, or care log entries directly inside the application.</li>
+        <li>Permanently delete all stored data at any time via Android System Settings (<strong>Settings &rarr; Apps &rarr; Floraly &rarr; Storage &rarr; Clear Data</strong>) or by uninstalling the application.</li>
+    </ul>
+
+    <h2>6. Age Requirement &amp; Child Privacy</h2>
+    <p>Floraly is a general audience utility rated for all ages (PEGI 3 / Everyone). We do not collect personal data from any user, including children under the age of 13.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have questions or feedback regarding this Privacy Policy, please contact us at <strong>basicapps.contact@gmail.com</strong>.</p>
+
+    <div class="footer">
+        &copy; 2026 BasicApps Studio. All rights reserved.
+    </div>
+</div>
+</body>
+</html>
